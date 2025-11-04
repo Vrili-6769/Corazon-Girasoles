@@ -1,0 +1,87 @@
+body {
+  background-color: #f7ebde;
+  color: #5b4636;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+#heart-container {
+  position: relative;
+  width: 150px;
+  height: 135px;
+  margin: 40px auto;
+}
+
+#heart {
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background-color: #ffb6c1;
+  top: 0;
+  left: 25px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+#heart::before,
+#heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background-color: #ffb6c1;
+  border-radius: 50%;
+}
+
+#heart::before {
+  top: -50px;
+  left: 0;
+}
+
+#heart::after {
+  left: 50px;
+  top: 0;
+}
+
+#progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: #ff69b4;
+  border-radius: 50px;
+  transition: height 0.2s;
+  z-index: -1;
+}
+
+.hidden {
+  display: none;
+}
+
+#flowers {
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+button {
+  background-color: #d4b99e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #b99572;
+}
